@@ -91,12 +91,10 @@
             <div><asp:Label ID="lbljoinContest" runat="server">Join Contest</asp:Label></div>
             <table>
                 <tr>
-                    <th>Month</th>
-                    <th>Savings</th>
+                   
                 </tr>
                 <tr>
-                    <td>January</td>
-                    <td>$100</td>
+                    
                 </tr>
             </table>
 
