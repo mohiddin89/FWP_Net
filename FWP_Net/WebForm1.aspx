@@ -88,16 +88,34 @@
                 Upcoming Matches :
                     <br />
             </div>
-            <div><asp:Label ID="lbljoinContest" runat="server">Join Contest</asp:Label></div>
-            <table>
-                <tr>
-                   
-                </tr>
-                <tr>
-                    
-                </tr>
-            </table>
-
+            <div>
+                <asp:Label ID="lbljoinContest" runat="server">Join Contest</asp:Label></div>
+            <div>
+                <asp:GridView ID="grdData" runat="server"
+                    AutoGenerateColumns="False" CellPadding="4" PageSize="5"
+                    ForeColor="#333333" GridLines="None" Width="200" AllowPaging="True"
+                    OnPageIndexChanging="grdData_PageIndexChanging">
+                    <AlternatingRowStyle BackColor="White" ForeColor="#284775"></AlternatingRowStyle>
+                    <Columns>
+                        <asp:BoundField DataField="ID" HeaderText="ID"></asp:BoundField>
+                        <asp:BoundField DataField="Name" HeaderText="Name"></asp:BoundField>
+                    </Columns>
+                    <EditRowStyle BackColor="#999999"></EditRowStyle>
+                    <FooterStyle BackColor="#5D7B9D" Font-Bold="True"
+                        ForeColor="White"></FooterStyle>
+                    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True"
+                        ForeColor="White"></HeaderStyle>
+                    <PagerStyle BackColor="#284775" ForeColor="White"
+                        HorizontalAlign="Center"></PagerStyle>
+                    <RowStyle BackColor="#F7F6F3" ForeColor="#333333"></RowStyle>
+                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True"
+                        ForeColor="#333333"></SelectedRowStyle>
+                    <SortedAscendingCellStyle BackColor="#E9E7E2"></SortedAscendingCellStyle>
+                    <SortedAscendingHeaderStyle BackColor="#506C8C"></SortedAscendingHeaderStyle>
+                    <SortedDescendingCellStyle BackColor="#FFFDF8"></SortedDescendingCellStyle>
+                    <SortedDescendingHeaderStyle BackColor="#6F8DAE"></SortedDescendingHeaderStyle>
+                </asp:GridView>
+            </div>
 
         </div>
     </form>
