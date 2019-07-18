@@ -40,12 +40,21 @@ namespace FWP_Net {
         protected global::System.Web.UI.WebControls.Label lbljoinContest;
         
         /// <summary>
-        /// grdData control.
+        /// grd1stInnings control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdData;
+        protected global::System.Web.UI.WebControls.GridView grd1stInnings;
+        
+        /// <summary>
+        /// grd2ndInnings control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView grd2ndInnings;
     }
 }
