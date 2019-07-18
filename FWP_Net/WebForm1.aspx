@@ -69,7 +69,7 @@
     <script src="Scripts/jquery.signalR-1.0.1.min.js"></script>
     <script src="signalr/hubs"></script>
     <script src="Scripts/knockout-2.2.0.js"></script>
-    <script type="text/javascript">
+   <%-- <script type="text/javascript">
         // Here we start
         $(function () {
             var chat = $.connection.cricketHub,
@@ -128,7 +128,7 @@
                 return location.href.indexOf('admin=') > -1
             }
         });
-    </script>
+    </script>--%>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -231,13 +231,13 @@
                     <input type="button" id="updateScoreLink" value="Update Score" />
                 </div>
                 <br />
-                <div data-bind="foreach: teams">
+               <%-- <div data-bind="foreach: teams">
                     <div>
                         <span class="team" data-bind=" html: team "></span>
                         <span class="runs" data-bind=" html: runs"></span>/<span class="wickets" data-bind="    html: wickets "></span>
                         <b>Overs</b> <span class="overs" data-bind=" html: oversText "></span>
                     </div>
-                </div>
+                </div>--%>
 
             </div>
 
