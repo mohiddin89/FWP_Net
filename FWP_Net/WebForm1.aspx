@@ -142,7 +142,7 @@
             <div style="margin-top: 50px;">
                 <label id="lblSelectInnings">Select Innings:&nbsp; </label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:DropDownList ID="drpInnings" runat="server">
+                    <asp:DropDownList ID="drpInnings" runat="server" AutoPostBack="True" OnSelectedIndexChanged="drpInnings_SelectedIndexChanged">
                         <asp:ListItem Text="---Select----"></asp:ListItem>
                         <asp:ListItem Text="---1st Innings----"></asp:ListItem>
                         <asp:ListItem Text="---2nd Innings----"></asp:ListItem>
@@ -157,7 +157,7 @@
                 <asp:Label ID="lbljoinContest" runat="server">Join Contest</asp:Label>
             </div>
             <div>
-                <asp:GridView ID="grd1stInnings" runat="server"
+                <asp:GridView ID="grd1stInnings" runat="server" Visible="false"
                     AutoGenerateColumns="False" CellPadding="4" PageSize="10"
                     ForeColor="#333333" GridLines="None" Width="600" AllowPaging="True"
                     OnPageIndexChanging="grdData_PageIndexChanging">
@@ -192,7 +192,7 @@
                 </asp:GridView>
             </div>
             <div style="margin-top: 50px;">
-                <asp:GridView ID="grd2ndInnings" runat="server"
+                <asp:GridView ID="grd2ndInnings" runat="server" Visible="false"
                     AutoGenerateColumns="False" CellPadding="4" PageSize="10"
                     ForeColor="#333333" GridLines="None" Width="600" AllowPaging="True"
                     OnPageIndexChanging="grdData_PageIndexChanging_2ndInn">

@@ -14,15 +14,13 @@ namespace FWP_Net
     public partial class WebForm1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {          
+            
             if (!IsPostBack)
             {
-                LoadGridData_1stInn();
-            }
-            else
-            {
-                LoadGridData_2ndInn();
-            }
+                //LoadGridData_1stInn();
+                //LoadGridData_2ndInn();
+            }           
         }
         //private void fillTable_Data()
         //{
@@ -133,6 +131,7 @@ namespace FWP_Net
             }
             grd1stInnings.DataSource = dt;
             grd1stInnings.DataBind();
+           
         }
         protected void grdData_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
@@ -210,6 +209,24 @@ namespace FWP_Net
             }
             gvr.Cells[3].Text = (Convert.ToInt32(gvr.Cells[1].Text) - Convert.ToInt32(gvr.Cells[2].Text)).ToString();
             //gvr["Entry Spots"] =gvr["Total Spots"] - 1;
+        }
+
+        protected void drpInnings_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+            if(drpInnings.SelectedIndex==1)
+            {
+                this.grd1stInnings.Visible = true;
+                LoadGridData_1stInn();
+                this.grd2ndInnings.Visible = false;
+                //grd1stInnings.DataBind();
+            }
+            else
+            {
+                this.grd2ndInnings.Visible = true;
+                LoadGridData_2ndInn();
+                this.grd1stInnings.Visible = false;
+            }
         }
         //public class CricketHub : Hub
         //{
