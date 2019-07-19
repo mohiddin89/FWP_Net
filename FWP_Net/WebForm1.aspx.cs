@@ -220,6 +220,7 @@ namespace FWP_Net
                 LoadGridData_1stInn();
                 this.grd2ndInnings.Visible = false;
                 lblFirsttitle.Visible = true;
+                lblsecondtitle.Visible = false;
                 //grd1stInnings.DataBind();
             }
             else
@@ -228,6 +229,7 @@ namespace FWP_Net
                 LoadGridData_2ndInn();
                 this.grd1stInnings.Visible = false;
                 lblsecondtitle.Visible = true;
+                lblFirsttitle.Visible = false;
             }
         }
        

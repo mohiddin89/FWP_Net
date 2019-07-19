@@ -160,7 +160,7 @@
                 <asp:Label ID="lbljoinContest" runat="server">Join Contest</asp:Label>
             </div>
             <div style="margin-top: 50px;">
-                <asp:Label ID="lblFirsttitle" Font-Bold="true" Font-Size="XX-Large" BackColor="#0066ff" ForeColor="White" Text="1st Innings" runat="server" Visible="false"></asp:Label>
+                <asp:Label ID="lblFirsttitle"  Font-Bold="true" Font-Size="XX-Large" BackColor="#0066ff" ForeColor="White" Text="1st Innings" runat="server" Visible="false"></asp:Label>
                 <asp:GridView ID="grd1stInnings" runat="server" Visible="false" CssClass="margin"
                     AutoGenerateColumns="False" CellPadding="4" PageSize="10"
                     ForeColor="#333333" GridLines="None" Width="600" AllowPaging="True"
@@ -196,7 +196,7 @@
                 </asp:GridView>
             </div>
             <div style="margin-top: 50px;">
-                <asp:Label ID="lblsecondtitle" Text="2nd Innings" runat="server" Visible="false"></asp:Label>
+                <asp:Label ID="lblsecondtitle" Text="2nd Innings" Font-Bold="true" Font-Size="XX-Large" BackColor="#0066ff" ForeColor="White" runat="server" Visible="false"></asp:Label>
                 <asp:GridView ID="grd2ndInnings" runat="server" Visible="false"
                     AutoGenerateColumns="False" CellPadding="4" PageSize="10"
                     ForeColor="#333333" GridLines="None" Width="600" AllowPaging="True"
