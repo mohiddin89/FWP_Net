@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.uigrid.com	TRUE	/	FALSE	1999999999	PHPSESSID	sl8n2befqq8ou34kkcl3up3k52
+

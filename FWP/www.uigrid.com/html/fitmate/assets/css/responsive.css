@@ -1,0 +1,240 @@
+/*!
+*	Theme Name 		  	: FITMATE
+* 	Description		  	: FITMATE is Fitness Studio Bootstrap Template designed for fitness clubs, Fitness Studio, Small gyms, individual Trainers, yoga studio, etc for fitness business to showcase their courses & services.
+* 	Framework Type 		: Bootstrap
+*	Author 			    : UIGRID
+*	Author Profile 		: http://www.uigrid.com/
+* 	Author Email 	  	: gridthemes@gmail.com
+*	Version 		    : 1.0
+*/
+
+/*--------------------------------------------------------------
+	TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.	Hero Cover
+2.	Main Navigation
+	Mobile Navigation Collapse 
+3.	About Fitness Studio
+4.	Free Fitness Session
+5.	Subscribtion 
+6.	Fitness Offer
+7.	Studio Gallery 
+8.	Contact 
+	Social Media Links
+9.	Parallax background Repeat
+
+Bootstrap - Mobile Responsive
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+#	Mobile Responsive Starts
+--------------------------------------------------------------*/
+@media (max-width: 1023px){
+
+	.section_heading {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.section_title{font-size: 2em;}
+
+
+	/*--------------------------------------------------------------
+	1.	Hero Cover
+	--------------------------------------------------------------*/
+	.cover_content{padding: 0px 15px;}
+	.cover_title{font-size: 2.5em;}
+
+
+	/*--------------------------------------------------------------
+	2.	Main Navigation
+	--------------------------------------------------------------*/
+	.navbar-default{
+		background-color: #2E2444;
+		box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+	}
+
+	.navbar-default .navbar-nav li a{
+		padding: 18px 15px;
+	}
+
+	.navbar-brand{
+		padding: 0px;
+	}
+
+
+	/*--------------------------------------------------------------
+	#	Mobile Navigation Collapse 
+	--------------------------------------------------------------*/
+	.navbar-default .navbar-toggle{
+		border: 1px solid #ffffff;
+		border-radius: 0px;
+		margin: 15px 15px;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar{
+		margin: 0px;
+		margin-bottom: 6px;
+		background-color: #ffffff;
+	}
+	.navbar-default .navbar-toggle .icon-bar:nth-last-child(1){
+		margin: 0px;
+	}
+
+	.navbar-nav{
+		margin: 0px;
+	}
+	.navbar-default .navbar-collapse{
+		max-height: 100% !important;
+		min-height: auto !important;
+		border: none;
+		box-shadow: none;
+	}
+	
+	.navbar-default .navbar-toggle:focus, 
+	.navbar-default .navbar-toggle:hover{
+		background-color: transparent;		
+	}
+
+	.navbar-inverse .navbar-toggle:focus, 
+	.navbar-inverse .navbar-toggle:hover{
+		background-color: transparent;
+	}
+	.navbar-header .menu_active > .icon-bar{ color: #ffffff; }
+
+
+	/*--------------------------------------------------------------
+	3.	About Fitness Studio
+	--------------------------------------------------------------*/
+	.about_cover{margin-bottom: 30px;}
+
+
+	/*--------------------------------------------------------------
+	4.	Free Fitness Session
+	--------------------------------------------------------------*/
+	.trail_wrap{padding: 70px 15px;}
+
+
+	/*--------------------------------------------------------------
+	5.	Subscribtion 
+	--------------------------------------------------------------*/
+	.plan_table{
+		margin-bottom: 30px;
+	}
+
+
+	/*--------------------------------------------------------------
+	6.	Fitness Offer 
+	--------------------------------------------------------------*/
+	.offer_title{font-size: 2em;}
+
+
+	/*--------------------------------------------------------------
+	7.	Studio Gallery 
+	--------------------------------------------------------------*/
+	.gallery_item{margin-bottom: 30px;}
+
+
+	/*--------------------------------------------------------------
+	8.	Contact 
+	--------------------------------------------------------------*/
+	.studio_contact, .studio_schedule{margin-bottom: 50px;}
+
+
+	/*--------------------------------------------------------------
+	#	Social Media Links 
+	--------------------------------------------------------------*/
+	.social_ico{margin-left: 15px;}
+
+	.social_ico li{
+		margin-bottom: 15px;
+	}
+	.social_ico li a{
+		display: block;
+		width: 40px;
+		height: 40px;
+		line-height: 38px;
+		margin-right: 0px;
+		font-size: 300;
+		text-align: center;
+		border: 2px solid #2a2a2a;
+		border-radius: 100%;
+		color: #2a2a2a;
+	}
+
+	.social_ico li a i{font-size: 1em;}
+
+
+	/*--------------------------------------------------------------
+	9.	Parallax background Repeat
+	--------------------------------------------------------------*/	
+	.offer, .testimonial_box{background-repeat: repeat;}
+
+}
+
+
+/*--------------------------------------------------------------
+#	Ipad Mini Pro Tablet Css for Menu
+--------------------------------------------------------------*/
+@media (min-width: 1024px) and (max-width: 1365px) {
+
+	.navbar-default .navbar-nav li a{
+		padding: 25px 15px;
+		font-size: 0.9em;
+	}
+
+}
+
+
+
+/*--------------------------------------------------------------
+#	Ipad Mini Pro Tablet Css for Menu
+--------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+	.plan_type{font-size: 1.2em;}
+	.price_ammount{font-size: 1em;}
+	.plan_features li{font-size: 0.8em;}
+
+}
+
+/*--------------------------------------------------------------
+#	Bootstrap - Mobile Responsive apply form Resolution 1023px
+--------------------------------------------------------------*/
+@media (max-width: 1023px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+
+}

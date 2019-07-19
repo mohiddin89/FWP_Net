@@ -219,6 +219,7 @@ namespace FWP_Net
                 this.grd1stInnings.Visible = true;
                 LoadGridData_1stInn();
                 this.grd2ndInnings.Visible = false;
+                lblFirsttitle.Visible = true;
                 //grd1stInnings.DataBind();
             }
             else
@@ -226,20 +227,9 @@ namespace FWP_Net
                 this.grd2ndInnings.Visible = true;
                 LoadGridData_2ndInn();
                 this.grd1stInnings.Visible = false;
+                lblsecondtitle.Visible = true;
             }
         }
-        //public class CricketHub : Hub
-        //{
-        //    public void UpdateScore(string teams)
-        //    {
-        //        Clients.All.UpdateScore(teams);
-        //    }
-        //    public void MatchFinished(string result)
-        //    {
-        //        Clients.All.MatchFinished(result);
-        //    }
-        //}
-
-
+       
     }
 }
